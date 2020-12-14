@@ -25,7 +25,28 @@ _After cloning you’ll probably want to delete the initial `_data/sites/*.js` f
 
 Speedlify will also save your data to `/results.zip` so that you can download later. Though this has proved to be unnecessary so far, it does serve as a fallback backup mechanism in case the Netlify cache is lost. Just look up your previous build URL and download the data to restore.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7298a132-e366-460a-a4da-1ea352a4e790/deploy-status)](https://app.netlify.com/sites/speedlify/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/69e4ddde-a3d4-4729-b2b1-72f43e427c76/deploy-status)](https://app.netlify.com/sites/boring-mcclintock-1e6a07/deploys)
+
+### Build locally and Deploy from local
+
+*Requires Netlify Dev
+
+_If you have lots of sites and want to offload the build/deploy time to a machine you have follow these steps.
+
+1. Clone you repo down, follow the steps in "Run locally" to get it to work
+1. Connect your repo to your site 
+1. Do a test by running `netlify build && netlify deploy`
+1. When you're happy with that add to your cronjobs via `crontab -e`
+1. Build and deploy as often as you'd like.  I'm going to do every hour at the 0th minute by addending this to `crontab -e`
+   
+   ```
+   # Run Speedlify Below
+   0 * * * * cd /home/jace/git/speedlify && netlify build && netlify deploy
+   # 0 * * * * cd /home/jace/git/speedlify && netlify build > /home/jace/git/speedlify/.buildlog && netlify deploy
+   # Run Speedlify Above
+   ```
+1. Review this all is deploying on https://netlify.com/
+1. Update `crontab -e` to have `netlify build --prod` instead of `netlify build`
 
 ## Known Limitations
 
