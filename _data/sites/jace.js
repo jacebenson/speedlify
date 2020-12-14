@@ -1,9 +1,9 @@
 module.exports = {
-	name: "Sample", // optional, falls back to object key
+	name: "Jace", // optional, falls back to object key
 	description: "Jace's Pet Projects",
 	skip: false,
 	options: {
-		frequency: 60 * 1, // (in minutes)
+		frequency: 24 * 60 * 1, // (in minutes)
 	},
 	urls: [
 		"https://atf.jace.pro/",
