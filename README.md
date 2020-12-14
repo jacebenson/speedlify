@@ -41,12 +41,10 @@ _If you have lots of sites and want to offload the build/deploy time to a machin
    
    ```
    # Run Speedlify Below
-   0 * * * * cd /home/jace/git/speedlify && netlify build && netlify deploy
-   # 0 * * * * cd /home/jace/git/speedlify && netlify build > /home/jace/git/speedlify/.buildlog && netlify deploy
+   0 * * * * /home/jace/git/speedlify/buildAndDeploy.sh
    # Run Speedlify Above
    ```
 1. Review this all is deploying on https://netlify.com/
-1. Update `crontab -e` to have `netlify build --prod` instead of `netlify build`
 
 ## Known Limitations
 

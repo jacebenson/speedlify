@@ -3,7 +3,7 @@ module.exports = {
 	description: "Jace's Pet Projects",
 	skip: false,
 	options: {
-		frequency: 1 * 1, // (in minutes), 23 hours
+		frequency: 60 * 1, // (in minutes)
 	},
 	urls: [
 		"https://atf.jace.pro/",

@@ -8,3 +8,5 @@ package-lock.json
 .cache
 # Local Netlify folder
 .netlify
+# build output
+.buildlog

@@ -8,7 +8,7 @@ module.exports = async function() {
 	});
 
 	return {
-		name: "now-news-sources", // optional, falls back to object key
+		name: "servicenow", // optional, falls back to object key
 		description: "ServiceNow News Sources",
 		// skip if localhost
 		// skip if this is a new fork of the speedlify (not Zach’s)
