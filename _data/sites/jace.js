@@ -3,7 +3,7 @@ module.exports = {
 	description: "Jace's Pet Projects",
 	skip: false,
 	options: {
-		frequency: 24 * 60 * 1, // (in minutes)
+		frequency: 23 * 60 * 1, // (in minutes)
 	},
 	urls: [
 		"https://atf.jace.pro/",
@@ -11,6 +11,7 @@ module.exports = {
 		"https://cajunbot.jace.pro/",
 		"https://calc.jace.pro/",
 		//"https://code.jace.pro/",//fails axe scan
+ 		"https://jace-ty.netlify.app",
 		"https://dev.jace.pro/",
 		"https://devtoolbox.jace.pro/",
 		"https://drum.jace.pro/",

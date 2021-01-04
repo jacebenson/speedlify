@@ -15,7 +15,7 @@ module.exports = async function() {
 		skip: false, //!process.env.CONTEXT || process.env.SITE_NAME !== "speedlify",
 		estimatedTimePerBuild: .2,
 		options: {
-			frequency: 24 * 60 * 1, // 24 hours
+			frequency: 23 * 60 * 1, // wait 23 hours so it runs ~ daily
 			// Use "run" if the sites don’t share assets on the same origin
 			//           and we can reset chrome with each run instead of
 			//           each site in every run (it’s faster)
