@@ -11,9 +11,10 @@
   # directory located at the absolute path "root/project/build-output"
   publish = "_site/"
   # Default build command.
-  command = "npm install && npm run build-production"
+  # command = "npm install && npm run build-production"
+  command = "npm run build-production"
 
   # Directory with the serverless Lambda functions to deploy to AWS.
-  functions = "functions/"
+  # functions = "functions/"
   # Directory to publish
   
