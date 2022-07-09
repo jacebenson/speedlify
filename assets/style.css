@@ -499,3 +499,6 @@ abbr {
 .category-stats dd span {
 	font-weight: 100;
 }
+speedlify-score {
+	flex-wrap: unset;
+}

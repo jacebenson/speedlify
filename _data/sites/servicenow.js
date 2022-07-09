@@ -1,7 +1,7 @@
 const CacheAsset = require("@11ty/eleventy-cache-assets");
 
 module.exports = async function() {
-	let url = "https://news.jace.pro/feeds.json";
+	let url = "";
 	let urlsJson = await CacheAsset(url, {
 		duration: "0s",
 		type: "json",
